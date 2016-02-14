@@ -1,6 +1,6 @@
 # AssignmentCoursera
 
-My assignment consists of three files: 
+My assignment consists of four files: 
 
 1. run_analysis.R, which executes the excercises of the course project. 
  
@@ -23,7 +23,11 @@ Then I transform a little the elements of the "features1" - I delete all of the 
 In order to assign the variable names from the "features_final3" I simply perform the colnames() function. 
 
 1.5. From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject
-Firstly I use "group_by" function to group the observations by the "Subject" and "Label" column and in that groups apply the "mean" function which is done by the "summarise_each". 
+Firstly I use "group_by" function to group the observations by the "Subject" and "Label" column and to that groups I apply the "mean" function which is done by the "summarise_each" function. 
 
-2. Codebook - contains the co
+2. Codebook - contains the codebook which is a transformation of the promptData(final_final) output. 
+
+3. Assigment_MK.txt file - tidy data file, created by using the function "write.table". 
+
+4. This README file :-)
 
