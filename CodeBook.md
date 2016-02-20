@@ -10,7 +10,7 @@ he experiments have been carried out with a group of 30 volunteers within an age
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-**Transformation of the data **
+**Transformation of the data**
 1.1 Merge the training and the test sets to create one data set 
 
 I upload six text files (X_test.txt,y_test.txt,y_train.txt,X_train.txt,subject_test.txt,subject_train.txt) from the zip file and I store them into six data frames (using the read.table function) Then I simply concaminate the files accordingly into train and test data sets. To merge all of the data, I transform once again the concaminated data sets into data frames and I merge them by using rbind command.
@@ -42,6 +42,6 @@ Firstly I use "group_by" function to group the observations by the "Subject" and
 
 The result is a data frame "final_final". 
 
-** Tidy data set**
+**Tidy data set**
 
 "Assignment_MK.txt" contains average of the obseravtions for every subject and activity (30X6=180).
